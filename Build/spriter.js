@@ -539,22 +539,7 @@ var Spriter;
         };
         // -------------------------------------------------------------------------
         SpriterFile.prototype.getFileName = function (path) {
-            var name;
-            switch (this._imageNameType) {
-                case eImageNameType.NAME_ONLY:
-                    name = (path.split('\\').pop().split('/').pop().split('.'))[0];
-                    break;
-                case eImageNameType.NAME_AND_EXTENSION:
-                    name = path.split('\\').pop().split('/').pop();
-                    break;
-                case eImageNameType.FULL_PATH_NO_EXTENSION:
-                    name = (path.split('.'))[0];
-                    break;
-                case eImageNameType.ORIGINAL:
-                    name = path;
-                    break;
-            }
-            return name;
+            return path;
         };
         // -------------------------------------------------------------------------
         SpriterFile.prototype.translateElementName = function (elementName) {
