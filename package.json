@@ -1,6 +1,7 @@
 {
   "name": "phaser-spriter",
   "version": "0.0.0",
+  "main": "Build/spriter.js",
   "description": "Play animations made with Spriter in Phaser engine. Load .xml, .json or special compact binary format.",
   "repository": {
     "type": "git",
